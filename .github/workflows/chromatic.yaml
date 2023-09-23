@@ -6,7 +6,6 @@ on: [push]
 jobs:
   chromatic-deployment:
     runs-on: ubuntu-latest
-    environment: test
 
     strategy:
       matrix:
@@ -14,7 +13,6 @@ jobs:
 
     env:
       NODE_ENV: test
-      CHROMATIC_PROJECT_TOKEN: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
 
     steps:
     - name: Git checkout
