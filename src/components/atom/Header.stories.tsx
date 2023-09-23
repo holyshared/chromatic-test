@@ -10,6 +10,10 @@ export default meta;
 
 type Story = StoryObj<typeof Header>;
 
-export const Primary: Story = {
-  render: () => <Header title='Primary' />,
+export const TitleOnly: Story = {
+  render: () => <Header title='title' />,
+};
+
+export const TitleWithDescription: Story = {
+  render: () => <Header title='title' description='description' />,
 };
