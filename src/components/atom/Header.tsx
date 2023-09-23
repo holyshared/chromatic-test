@@ -1,8 +1,16 @@
 import React from "react";
+import "./style.css"
 
-export const Header = (props: { title: string, description?: string }) => {
+interface HeaderProps {
+  title: string
+  description?: string  
+}
+
+const classNameOf = (props: HeaderProps) => props.description ? "title titleWithDescription" : "title titleOnly";
+
+export const Header = (props: HeaderProps) => {
   return (
-    <header>
+    <header className={classNameOf(props)}>
       <hgroup>
         <h1>{props.title}</h1>
         {props.description ? <p>{props.description}</p> : null}

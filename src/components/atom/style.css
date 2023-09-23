@@ -1,0 +1,14 @@
+.title {
+  margin-bottom: 10px;
+}
+
+.title h1 {
+  font-size: 1.6em;
+  margin-bottom: 5px;
+}
+
+.titleWithDescription hgroup p {
+  font-size: 1.0em;
+  padding: 0px;
+  margin: 0px;
+}

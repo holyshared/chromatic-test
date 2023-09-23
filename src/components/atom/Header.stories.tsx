@@ -15,5 +15,5 @@ export const TitleOnly: Story = {
 };
 
 export const TitleWithDescription: Story = {
-  render: () => <Header title='title' description='description' />,
+  render: () => <Header title='title' description='description description description' />,
 };
