@@ -3,6 +3,7 @@ on: [push]
 jobs:
   ui-test:
     runs-on: ubuntu-latest
+    environment: test
 
     strategy:
       matrix:
@@ -24,6 +25,4 @@ jobs:
     - run: yarn --frozen-lockfile
 
     - name: Publish to Chromatic
-      env:
-        CHROMATIC_PROJECT_TOKEN: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
       run: yarn chromatic
