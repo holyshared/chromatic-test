@@ -1,5 +1,6 @@
 {
   "name": "chromatic-test",
+  "version": "0.0.1",
   "packageManager": "yarn@3.6.3",
   "devDependencies": {
     "@storybook/addon-actions": "^7.4.4",
@@ -28,6 +29,7 @@
   },
   "scripts": {
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "chromatic": "chromatic --exit-zero-on-changes"
   }
 }
