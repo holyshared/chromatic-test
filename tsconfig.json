@@ -1,6 +1,8 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "ES2018",
+    "moduleResolution": "node",
+    "typeRoots": ["@types"],
     "jsx": "react"
   },
   "include": [
