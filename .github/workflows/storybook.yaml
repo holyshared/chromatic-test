@@ -22,4 +22,8 @@ jobs:
         node-version: ${{ matrix.node-version }}
 
     - run: yarn --frozen-lockfile
-    - run: yarn chromatic
+
+    - name: Publish to Chromatic
+      env:
+        CHROMATIC_PROJECT_TOKEN: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
+      run: yarn chromatic
