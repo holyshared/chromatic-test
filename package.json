@@ -1,0 +1,11 @@
+{
+  "name": "chromatic-test",
+  "packageManager": "yarn@3.6.3",
+  "devDependencies": {
+    "chromatic": "^7.2.0",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "react": "^18.2.0"
+  }
+}
