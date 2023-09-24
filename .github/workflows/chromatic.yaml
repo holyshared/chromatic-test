@@ -31,4 +31,4 @@ jobs:
       uses: chromaui/action@v1
       with:
         projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
-        storybookBaseDir: packages/frontend
+        workingDir: packages/frontend
